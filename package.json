@@ -9,6 +9,7 @@
   "author": "Margaret Blauvelt",
   "license": "ISC",
   "dependencies": {
+    "morgan": "^1.9.0",
     "uuid": "^3.2.1"
   }
 }
