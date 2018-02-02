@@ -3,11 +3,25 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-button, input[type="text"] {
+button,
+input[type="text"],
+input[type="textbox"] {
   padding: 5px;
+  margin-top: 10px;
+  border: solid 1px #333;
+}
+input[type="text"],
+input[type="textbox"] {
+  width: 80%;
+}
+
+.label-item {
+  display: inline-block;
+  width: 19%;
+  text-align: right;
 }
 
 button:hover {

@@ -14,11 +14,11 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-// when requests come into `/blog-list` or
+// when requests come into `/blog` or
 // `/recipes`, we'll route them to the express
 // router instances we've imported. Remember,
 // these router instances act as modular, mini-express apps.
-app.use("/blog-list", blogRouter);
+app.use("/blog", blogRouter);
 
 app.listen(process.env.PORT || 8080, () => {
   console.log(`Your app is listening on port ${process.env.PORT || 8080}`);

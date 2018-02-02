@@ -11,10 +11,10 @@ const uuid = require("uuid");
 
 function StorageException(message) {
   this.message = message;
-  this.name = "StorageException";
+  this.title = "StorageException";
 }
 
-const BlogPosts = {
+const Blogs = {
   create: function(title, content, author, publishDate) {
     const post = {
       id: uuid.v4(),
@@ -55,10 +55,10 @@ const BlogPosts = {
   }
 };
 
-function createBlogPostsModel() {
-  const storage = Object.create(BlogPosts);
+function createBlogsModel() {
+  const storage = Object.create(Blogs);
   storage.posts = [];
   return storage;
 }
 
-module.exports = { BlogPosts: createBlogPostsModel() };
+module.exports = { Blogs: createBlogsModel() };
