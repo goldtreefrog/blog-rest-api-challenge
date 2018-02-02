@@ -8,20 +8,25 @@ body {
 
 button,
 input[type="text"],
-input[type="textbox"] {
+textarea {
   padding: 5px;
   margin-top: 10px;
   border: solid 1px #333;
 }
 input[type="text"],
-input[type="textbox"] {
+textarea {
   width: 80%;
 }
-
+textarea {
+  height: 3em;
+}
 .label-item {
   display: inline-block;
   width: 19%;
   text-align: right;
+  vertical-align: top;
+  margin-top: 10px;
+  padding-top: 0.25em;
 }
 
 button:hover {
